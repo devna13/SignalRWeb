@@ -1,0 +1,8 @@
+D:\Vivek\Projects\Practice\SignalRWeb\CoreRabbitMQService\bin\Debug\netcoreapp2.0\CoreRabbitMQService.deps.json
+D:\Vivek\Projects\Practice\SignalRWeb\CoreRabbitMQService\bin\Debug\netcoreapp2.0\CoreRabbitMQService.runtimeconfig.json
+D:\Vivek\Projects\Practice\SignalRWeb\CoreRabbitMQService\bin\Debug\netcoreapp2.0\CoreRabbitMQService.runtimeconfig.dev.json
+D:\Vivek\Projects\Practice\SignalRWeb\CoreRabbitMQService\bin\Debug\netcoreapp2.0\CoreRabbitMQService.dll
+D:\Vivek\Projects\Practice\SignalRWeb\CoreRabbitMQService\obj\Debug\netcoreapp2.0\CoreRabbitMQService.csprojAssemblyReference.cache
+D:\Vivek\Projects\Practice\SignalRWeb\CoreRabbitMQService\obj\Debug\netcoreapp2.0\CoreRabbitMQService.csproj.CoreCompileInputs.cache
+D:\Vivek\Projects\Practice\SignalRWeb\CoreRabbitMQService\obj\Debug\netcoreapp2.0\CoreRabbitMQService.AssemblyInfoInputs.cache
+D:\Vivek\Projects\Practice\SignalRWeb\CoreRabbitMQService\obj\Debug\netcoreapp2.0\CoreRabbitMQService.AssemblyInfo.cs

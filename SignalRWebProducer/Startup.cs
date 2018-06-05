@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SignalRWeb.Hubs;
 
-namespace SignalRWeb
+namespace SignalRWebProducer
 {
     public class Startup
     {
@@ -20,17 +19,6 @@ namespace SignalRWeb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(o => o.AddPolicy("CorsPolicy", builder => {
-                builder
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                //.WithOrigins("http://localhost:49446")
-                .AllowCredentials()
-                .AllowAnyOrigin();
-
-            }));
-            services.AddSignalR();
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // In production, the Angular files will be served from this directory
@@ -53,17 +41,9 @@ namespace SignalRWeb
                 app.UseHsts();
             }
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
-
-            app.UseCors("CorsPolicy");
-            //app.UseWebSockets();
-            app.UseSignalR(routes =>
-            {
-                routes.MapHub<NotifyHub>("/notifyhub");
-                routes.MapHub<StocHub>("/stochub");
-            });
 
             app.UseMvc(routes =>
             {

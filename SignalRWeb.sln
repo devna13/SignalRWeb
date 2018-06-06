@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRWeb", "SignalRWeb\SignalRWeb.csproj", "{222BB623-2232-4AF9-B6B2-313BFAC7A86A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRWebProducer", "SignalRWebProducer\SignalRWebProducer.csproj", "{3CC7748E-CEB3-4FA5-8AB4-6E71540F5645}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreRabbitMQService", "CoreRabbitMQService\CoreRabbitMQService.csproj", "{22ADBCC2-2F84-4ACC-ADFC-434EF31AB762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreRabbitMQService", "CoreRabbitMQService\CoreRabbitMQService.csproj", "{22ADBCC2-2F84-4ACC-ADFC-434EF31AB762}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRWebProducer", "SignalRWebProducer\SignalRWebProducer.csproj", "{44CC5F89-6419-4355-8094-208ECE340F4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{222BB623-2232-4AF9-B6B2-313BFAC7A86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{222BB623-2232-4AF9-B6B2-313BFAC7A86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{222BB623-2232-4AF9-B6B2-313BFAC7A86A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3CC7748E-CEB3-4FA5-8AB4-6E71540F5645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3CC7748E-CEB3-4FA5-8AB4-6E71540F5645}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3CC7748E-CEB3-4FA5-8AB4-6E71540F5645}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3CC7748E-CEB3-4FA5-8AB4-6E71540F5645}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22ADBCC2-2F84-4ACC-ADFC-434EF31AB762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{22ADBCC2-2F84-4ACC-ADFC-434EF31AB762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22ADBCC2-2F84-4ACC-ADFC-434EF31AB762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22ADBCC2-2F84-4ACC-ADFC-434EF31AB762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44CC5F89-6419-4355-8094-208ECE340F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44CC5F89-6419-4355-8094-208ECE340F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44CC5F89-6419-4355-8094-208ECE340F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44CC5F89-6419-4355-8094-208ECE340F4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

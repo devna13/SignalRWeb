@@ -1,2 +1,4 @@
 /.vs/SignalRWeb/v15/Server/sqlite3/storage.ide
 /.vs/SignalRWeb/v15/Server/sqlite3/storage.ide-wal
+/.vs/SignalRWeb/v15/Server/sqlite3/storage.ide-shm
+/CoreRabbitMQService/obj/Debug/netcoreapp2.1/CoreRabbitMQService.csprojAssemblyReference.cache

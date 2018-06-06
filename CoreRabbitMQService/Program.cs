@@ -34,7 +34,7 @@ namespace CoreRabbitMQService
                     Stoc stoc = JsonConvert.DeserializeObject<Stoc>(data);
                     Console.WriteLine(" [x] Received {0}", stoc.Name + " : " + stoc.Value);
 
-                    connectionSignalR.InvokeAsync("PushNotify", stoc);
+                    connectionSignalR.SendAsync("PushNotify", stoc);
                     //-------------------------
 
                 };

@@ -39,7 +39,7 @@ export class AppComponent {
 
     this._hubConnectionStocs.on('ChangeStocValue', data => {
       console.log(JSON.stringify(data));
-      alert("New Price : " + data.value + " ₺");
+      //alert("New Price : " + data.value + " ₺");
       //document.getElementById("stocValue").innerHTML = data.value;
 
       this.msgs.push({severity: "1", summary: data.value});

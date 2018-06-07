@@ -7,27 +7,24 @@ export class AppComponent {
   public _hubConnection : signalR.HubConnection;
   public _hubConnectionStocs : signalR.HubConnection;
   msgs : Message[] = [];
-
+  stocs: any[] = [];
   constructor() {}
 
   ngOnInit() : void {
     this._hubConnection = new HubConnection('http://localhost:49446/notifyhub');
     this
-      ._hubConnection
-      .start()
+      ._hubConnection.start()
       .then(() => console.log('Connection started!'))
       .catch(err => console.log(err));
 
     this
-      ._hubConnection
-      .on('BroadcastMessage', (type : string, payload : string) => {
+      ._hubConnection.on('BroadcastMessage', (type : string, payload : string) => {
         this.msgs.push({severity: type, summary: payload});
       });
 
     this._hubConnectionStocs = new HubConnection('http://localhost:49446/stochub');
 
-    this._hubConnectionStocs
-      .start()
+    this._hubConnectionStocs.start()
       .then(() => console.log('Connection started!'))
       .catch(err => console.log(err));
 
@@ -39,10 +36,8 @@ export class AppComponent {
 
     this._hubConnectionStocs.on('ChangeStocValue', data => {
       console.log(JSON.stringify(data));
-      //alert("New Price : " + data.value + " ₺");
-      //document.getElementById("stocValue").innerHTML = data.value;
-
-      this.msgs.push({severity: "1", summary: data.value});
+      this.stocs.push(data);
+      //this.msgs.push({severity: "1", summary: data.value});
     });
   }
 }

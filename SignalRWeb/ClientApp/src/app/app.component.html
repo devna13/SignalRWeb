@@ -5,6 +5,21 @@
     </div>
     <div class='col-sm-9 body-content'>
       <router-outlet></router-outlet>
+
+      <div *ngIf="stocs.length>0" class="table-container">
+        <table class="table table-bordered">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Value</th>
+          </tr>
+          <tr *ngFor="let stoc of stocs">
+            <td>{{stoc.id}}</td>
+            <td>{{stoc.name}}</td>
+            <td>{{stoc.value}}</td>
+          </tr>
+        </table>
+      </div>
     </div>
     <div class="layout-topbar">
       <div class="fluid-container">
@@ -14,7 +29,9 @@
               </div>
           </div>
       </div>
-  </div>  
+  </div>
+    
+
   <p-growl [(value)]="msgs"></p-growl>
   </div>
 </div>

@@ -11,11 +11,23 @@ namespace SignalRWebProducer.Controllers
     public class StocsController : Controller
     {
         [HttpPost]
-        public string Push([FromBody]Stoc stock)
+        public async Task<string> Push([FromBody]Stoc stock)
         {
-            //UpdateDummyList(stoc);
-            RabbitMQPost rabbitMq = new RabbitMQPost(stock);
-            Console.WriteLine(rabbitMq.Post());
+            for(int i = 0; i <= 10; i++)
+            {
+                await Task.Delay(1500).ContinueWith((a) =>
+                {
+                    stock = new Stoc
+                    {
+                        ID = i,
+                        Name = "Vivek",
+                        Value = i * 100
+                    };
+                    RabbitMQPost rabbitMq = new RabbitMQPost(stock);
+                    Console.WriteLine(rabbitMq.Post());
+                });
+                
+            }           
             return "success";
         }
     }
